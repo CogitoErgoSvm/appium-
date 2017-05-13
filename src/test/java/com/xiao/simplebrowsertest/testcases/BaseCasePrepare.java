@@ -84,6 +84,7 @@ public class BaseCasePrepare {
 		capabilities.setCapability("platformVersion", "4.4.4");
 		capabilities.setCapability("app", app.getAbsolutePath());
 
+		capabilities.setCapability("unicodeKeyboard", "True");
 		capabilities.setCapability("resetKeyboard", "True");
 
 		capabilities.setCapability("appPackage", "com.xiao.simplebrowser");
