@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 481.134 sec <<< FAILURE! - in TestSuite
+clickStart(com.xiao.simplebrowsertest.testcases.WelcomeActivityTest)  Time elapsed: 0.201 sec  <<< FAILURE!
+java.lang.AssertionError: 期望的文字是 [立即体验] 但是找到了 [开始体验]
+	at com.xiao.simplebrowsertest.testcases.WelcomeActivityTest.clickStart(WelcomeActivityTest.java:51)
+

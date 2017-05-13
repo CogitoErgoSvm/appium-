@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestReporter">
+              <span class="suite-name border-failed">TestReporter</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestReporter">
+                    <span>E:\Repositories\SimpleBrowserTest\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestReporter">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestReporter">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestReporter">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestReporter">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestReporter">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestReporter">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestReporter" class="hide-methods failed suite-TestReporter"> (hide)</a> <!-- hide-methods failed suite-TestReporter -->
+                      <a href="#" panel-name="suite-TestReporter" class="show-methods failed suite-TestReporter"> (show)</a> <!-- show-methods failed suite-TestReporter -->
+                    </span>
+                    <div class="method-list-content failed suite-TestReporter">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest" hash-for-method="clickStart(立即体验)">clickStart(立即体验)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestReporter -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestReporter" class="hide-methods passed suite-TestReporter"> (hide)</a> <!-- hide-methods passed suite-TestReporter -->
+                      <a href="#" panel-name="suite-TestReporter" class="show-methods passed suite-TestReporter"> (show)</a> <!-- show-methods passed suite-TestReporter -->
+                    </span>
+                    <div class="method-list-content passed suite-TestReporter">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest" hash-for-method="clickStart(开始体验)">clickStart(开始体验)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(y, 123456, .activity.RegisterActivity)">registerWithData(y, 123456, .activity.RegisterActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(yinxiao, 123456, .activity.LoginActivity)">registerWithData(yinxiao, 123456, .activity.LoginActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(testtest123, 123456, .activity.RegisterActivity)">registerWithData(testtest123, 123456, .activity.RegisterActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(test, 123456789, .activity.RegisterActivity)">registerWithData(test, 123456789, .activity.RegisterActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(test, 1, .activity.RegisterActivity)">registerWithData(test, 1, .activity.RegisterActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(yinxiao, 12, .activity.RegisterActivity)">registerWithData(yinxiao, 12, .activity.RegisterActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(test, 123, .activity.LoginActivity)">registerWithData(test, 123, .activity.LoginActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(yx, 123456, .activity.RegisterActivity)">registerWithData(yx, 123456, .activity.RegisterActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.RegisterActivityTest" hash-for-method="registerWithData(testtest, 123456, .activity.LoginActivity)">registerWithData(testtest, 123456, .activity.LoginActivity)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.SearchActivityTest" hash-for-method="searchKeyWord(java)">searchKeyWord(java)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.SearchActivityTest" hash-for-method="searchKeyWord(西南科技大学)">searchKeyWord(西南科技大学)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestReporter" title="com.xiao.simplebrowsertest.testcases.SearchActivityTest" hash-for-method="searchKeyWord(appium)">searchKeyWord(appium)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestReporter -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestReporter" class="panel TestReporter">
+          <div class="suite-TestReporter-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.xiao.simplebrowsertest.testcases.WelcomeActivityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickStart(立即体验)">
+                  </a> <!-- clickStart(立即体验) -->
+                  <span class="method-name">clickStart</span>
+                  <span class="parameters">(立即体验)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 期望的文字是 [立即体验] 但是找到了 [开始体验]
+	at com.xiao.simplebrowsertest.utils.AppiumUtils.isTextCorrect(AppiumUtils.java:64)
+	at com.xiao.simplebrowsertest.testcases.WelcomeActivityTest.clickStart(WelcomeActivityTest.java:51)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestReporter-class-failed -->
+          <div class="suite-TestReporter-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xiao.simplebrowsertest.testcases.RegisterActivityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(y, 123456, .activity.RegisterActivity)">
+                  </a> <!-- registerWithData(y, 123456, .activity.RegisterActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(y, 123456, .activity.RegisterActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(yinxiao, 123456, .activity.LoginActivity)">
+                  </a> <!-- registerWithData(yinxiao, 123456, .activity.LoginActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(yinxiao, 123456, .activity.LoginActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(testtest123, 123456, .activity.RegisterActivity)">
+                  </a> <!-- registerWithData(testtest123, 123456, .activity.RegisterActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(testtest123, 123456, .activity.RegisterActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(test, 123456789, .activity.RegisterActivity)">
+                  </a> <!-- registerWithData(test, 123456789, .activity.RegisterActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(test, 123456789, .activity.RegisterActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(test, 1, .activity.RegisterActivity)">
+                  </a> <!-- registerWithData(test, 1, .activity.RegisterActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(test, 1, .activity.RegisterActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(yinxiao, 12, .activity.RegisterActivity)">
+                  </a> <!-- registerWithData(yinxiao, 12, .activity.RegisterActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(yinxiao, 12, .activity.RegisterActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(test, 123, .activity.LoginActivity)">
+                  </a> <!-- registerWithData(test, 123, .activity.LoginActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(test, 123, .activity.LoginActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(yx, 123456, .activity.RegisterActivity)">
+                  </a> <!-- registerWithData(yx, 123456, .activity.RegisterActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(yx, 123456, .activity.RegisterActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithData(testtest, 123456, .activity.LoginActivity)">
+                  </a> <!-- registerWithData(testtest, 123456, .activity.LoginActivity) -->
+                  <span class="method-name">registerWithData</span>
+                  <span class="parameters">(testtest, 123456, .activity.LoginActivity)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestReporter-class-passed -->
+          <div class="suite-TestReporter-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xiao.simplebrowsertest.testcases.WelcomeActivityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickStart(开始体验)">
+                  </a> <!-- clickStart(开始体验) -->
+                  <span class="method-name">clickStart</span>
+                  <span class="parameters">(开始体验)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestReporter-class-passed -->
+          <div class="suite-TestReporter-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xiao.simplebrowsertest.testcases.SearchActivityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchKeyWord(java)">
+                  </a> <!-- searchKeyWord(java) -->
+                  <span class="method-name">searchKeyWord</span>
+                  <span class="parameters">(java)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchKeyWord(西南科技大学)">
+                  </a> <!-- searchKeyWord(西南科技大学) -->
+                  <span class="method-name">searchKeyWord</span>
+                  <span class="parameters">(西南科技大学)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchKeyWord(appium)">
+                  </a> <!-- searchKeyWord(appium) -->
+                  <span class="method-name">searchKeyWord</span>
+                  <span class="parameters">(appium)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestReporter-class-passed -->
+        </div> <!-- panel TestReporter -->
+        <div panel-name="test-xml-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Repositories\SimpleBrowserTest\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;TestReporter&quot;&gt;
+  &lt;test name=&quot;SimpleBrowserTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.xiao.simplebrowsertest.testcases.WelcomeActivityTest&quot;/&gt;
+      &lt;class name=&quot;com.xiao.simplebrowsertest.testcases.RegisterActivityTest&quot;/&gt;
+      &lt;class name=&quot;com.xiao.simplebrowsertest.testcases.SearchActivityTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SimpleBrowserTest --&gt;
+  &lt;test name=&quot;SimpleBrowserTest(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.xiao.simplebrowsertest.testcases.RegisterActivityTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.xiao.simplebrowsertest.testcases.RegisterActivityTest --&gt;
+      &lt;class name=&quot;com.xiao.simplebrowsertest.testcases.WelcomeActivityTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;clickStart&quot; invocation-numbers=&quot;0&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.xiao.simplebrowsertest.testcases.WelcomeActivityTest --&gt;
+      &lt;class name=&quot;com.xiao.simplebrowsertest.testcases.SearchActivityTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.xiao.simplebrowsertest.testcases.SearchActivityTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SimpleBrowserTest(failed) --&gt;
+&lt;/suite&gt; &lt;!-- TestReporter --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestReporter</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SimpleBrowserTest (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">SimpleBrowserTest(failed) (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestReporter</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestReporter</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestReporter');
+function tableData_TestReporter() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchKeyWord')
+data.setCell(0, 2, 'com.xiao.simplebrowsertest.testcases.SearchActivityTest')
+data.setCell(0, 3, 42407);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchKeyWord')
+data.setCell(1, 2, 'com.xiao.simplebrowsertest.testcases.SearchActivityTest')
+data.setCell(1, 3, 39636);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchKeyWord')
+data.setCell(2, 2, 'com.xiao.simplebrowsertest.testcases.SearchActivityTest')
+data.setCell(2, 3, 38188);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerWithData')
+data.setCell(3, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(3, 3, 34216);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'registerWithData')
+data.setCell(4, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(4, 3, 34049);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registerWithData')
+data.setCell(5, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(5, 3, 33537);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'registerWithData')
+data.setCell(6, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(6, 3, 31976);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'registerWithData')
+data.setCell(7, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(7, 3, 30966);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'registerWithData')
+data.setCell(8, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(8, 3, 30455);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registerWithData')
+data.setCell(9, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(9, 3, 30339);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'registerWithData')
+data.setCell(10, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(10, 3, 30018);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'registerWithData')
+data.setCell(11, 2, 'com.xiao.simplebrowsertest.testcases.RegisterActivityTest')
+data.setCell(11, 3, 29661);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'clickStart')
+data.setCell(12, 2, 'com.xiao.simplebrowsertest.testcases.WelcomeActivityTest')
+data.setCell(12, 3, 2771);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'clickStart')
+data.setCell(13, 2, 'com.xiao.simplebrowsertest.testcases.WelcomeActivityTest')
+data.setCell(13, 3, 198);
+window.suiteTableData['TestReporter']= { tableData: data, tableDiv: 'times-div-TestReporter'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-TestReporter">
+              </div> <!-- times-div-TestReporter -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestReporter</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestReporter" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xiao.simplebrowsertest.testcases.WelcomeActivityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickStart(立即体验)</span>
+                <span class="method-start">22022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickStart(开始体验)</span>
+                <span class="method-start">22228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25000 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xiao.simplebrowsertest.testcases.RegisterActivityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26380 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(yx, 123456, .activity.RegisterActivity)</span>
+                <span class="method-start">45452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(yinxiao, 12, .activity.RegisterActivity)</span>
+                <span class="method-start">75113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(y, 123456, .activity.RegisterActivity)</span>
+                <span class="method-start">105568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(test, 1, .activity.RegisterActivity)</span>
+                <span class="method-start">135586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(yinxiao, 123456, .activity.LoginActivity)</span>
+                <span class="method-start">165925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(test, 123, .activity.LoginActivity)</span>
+                <span class="method-start">199462 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(test, 123456789, .activity.RegisterActivity)</span>
+                <span class="method-start">233511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(testtest, 123456, .activity.LoginActivity)</span>
+                <span class="method-start">264479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithData(testtest123, 123456, .activity.RegisterActivity)</span>
+                <span class="method-start">298695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">330671 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xiao.simplebrowsertest.testcases.SearchActivityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">331999 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchKeyWord(java)</span>
+                <span class="method-start">353551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchKeyWord(appium)</span>
+                <span class="method-start">391739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchKeyWord(西南科技大学)</span>
+                <span class="method-start">431376 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">473784 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

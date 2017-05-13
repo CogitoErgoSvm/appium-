@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 230.334 sec <<< FAILURE! - in TestSuite
+clickStart(com.xiao.simplebrowsertest.testcases.WelcomeActivityTest)  Time elapsed: 0.719 sec  <<< FAILURE!
+java.lang.AssertionError: 期望的文字是 [立即体验] 但是找到了 [开始体验]
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.xiao.simplebrowsertest.utils.AppiumUtils.isTextCorrect(AppiumUtils.java:62)
+	at com.xiao.simplebrowsertest.testcases.WelcomeActivityTest.clickStart(WelcomeActivityTest.java:51)
+

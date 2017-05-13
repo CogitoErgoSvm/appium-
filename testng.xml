@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestReporter">
+    <test name="SimpleBrowserTest">
+        <classes>
+            <class name="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest"/>
+            <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest"/>
+            <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest"/>
+        </classes>
+    </test>
+  <!--   
+    <test name="注册功能测试">
+        <classes>
+            <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest"/>
+        </classes>
+    </test>
+    
+    <test name="搜索功能测试">
+        <classes>
+            <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest"/>
+        </classes>
+    </test>
+    --> 
+</suite>
