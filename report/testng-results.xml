@@ -1,259 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="14" passed="13">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestReporter" duration-ms="475348" started-at="2017-05-13T07:23:21Z" finished-at="2017-05-13T07:31:16Z">
+  <suite name="TestReporter" duration-ms="40791" started-at="2017-05-13T09:07:47Z" finished-at="2017-05-13T09:08:28Z">
     <groups>
     </groups>
-    <test name="SimpleBrowserTest" duration-ms="475348" started-at="2017-05-13T07:23:21Z" finished-at="2017-05-13T07:31:16Z">
-      <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="setUp" is-config="true" duration-ms="18391" started-at="2017-05-13T15:23:47Z" finished-at="2017-05-13T15:24:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="29661" started-at="2017-05-13T15:24:07Z" data-provider="registData" finished-at="2017-05-13T15:24:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yx]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.RegisterActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="30455" started-at="2017-05-13T15:24:36Z" data-provider="registData" finished-at="2017-05-13T15:25:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yinxiao]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.RegisterActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="30018" started-at="2017-05-13T15:25:07Z" data-provider="registData" finished-at="2017-05-13T15:25:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[y]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.RegisterActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="30339" started-at="2017-05-13T15:25:37Z" data-provider="registData" finished-at="2017-05-13T15:26:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.RegisterActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="33537" started-at="2017-05-13T15:26:07Z" data-provider="registData" finished-at="2017-05-13T15:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yinxiao]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.LoginActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="34049" started-at="2017-05-13T15:26:41Z" data-provider="registData" finished-at="2017-05-13T15:27:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.LoginActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="30966" started-at="2017-05-13T15:27:15Z" data-provider="registData" finished-at="2017-05-13T15:27:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456789]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.RegisterActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="34216" started-at="2017-05-13T15:27:46Z" data-provider="registData" finished-at="2017-05-13T15:28:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testtest]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.LoginActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="registerWithData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="registerWithData" duration-ms="31976" started-at="2017-05-13T15:28:20Z" data-provider="registData" finished-at="2017-05-13T15:28:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testtest123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.activity.RegisterActivity]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerWithData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.xiao.simplebrowsertest.testcases.RegisterActivityTest@a52ca2e]" name="tearDown" is-config="true" duration-ms="1327" started-at="2017-05-13T15:28:52Z" finished-at="2017-05-13T15:28:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.xiao.simplebrowsertest.testcases.RegisterActivityTest -->
-      <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.xiao.simplebrowsertest.testcases.SearchActivityTest@1ad8df52]" name="setUp" is-config="true" duration-ms="21080" started-at="2017-05-13T15:28:53Z" finished-at="2017-05-13T15:29:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchKeyWord(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.SearchActivityTest@1ad8df52]" name="searchKeyWord" duration-ms="38188" started-at="2017-05-13T15:29:15Z" data-provider="searchData" finished-at="2017-05-13T15:29:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[java]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchKeyWord -->
-        <test-method status="PASS" signature="searchKeyWord(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.SearchActivityTest@1ad8df52]" name="searchKeyWord" duration-ms="39636" started-at="2017-05-13T15:29:53Z" data-provider="searchData" finished-at="2017-05-13T15:30:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[appium]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchKeyWord -->
-        <test-method status="PASS" signature="searchKeyWord(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.SearchActivityTest@1ad8df52]" name="searchKeyWord" duration-ms="42407" started-at="2017-05-13T15:30:32Z" data-provider="searchData" finished-at="2017-05-13T15:31:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[西南科技大学]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchKeyWord -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.xiao.simplebrowsertest.testcases.SearchActivityTest@1ad8df52]" name="tearDown" is-config="true" duration-ms="1542" started-at="2017-05-13T15:31:15Z" finished-at="2017-05-13T15:31:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.xiao.simplebrowsertest.testcases.SearchActivityTest -->
+    <test name="首页" duration-ms="40791" started-at="2017-05-13T09:07:47Z" finished-at="2017-05-13T09:08:28Z">
       <class name="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@bb9ab64]" name="setUp" is-config="true" duration-ms="21346" started-at="2017-05-13T15:23:21Z" finished-at="2017-05-13T15:23:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@2764c546]" name="setUp" is-config="true" duration-ms="25998" started-at="2017-05-13T17:07:47Z" finished-at="2017-05-13T17:08:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="clickStart(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@bb9ab64]" name="clickStart" duration-ms="198" started-at="2017-05-13T15:23:43Z" data-provider="WelcomeData" finished-at="2017-05-13T15:23:43Z">
+        <test-method status="FAIL" signature="clickStart(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@2764c546]" name="clickStart" duration-ms="2900" started-at="2017-05-13T17:08:14Z" data-provider="WelcomeData" finished-at="2017-05-13T17:08:17Z">
           <params>
             <param index="0">
               <value>
@@ -333,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickStart -->
-        <test-method status="PASS" signature="clickStart(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@bb9ab64]" name="clickStart" duration-ms="2771" started-at="2017-05-13T15:23:43Z" data-provider="WelcomeData" finished-at="2017-05-13T15:23:46Z">
+        <test-method status="PASS" signature="clickStart(java.lang.String)[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@2764c546]" name="clickStart" duration-ms="9494" started-at="2017-05-13T17:08:17Z" data-provider="WelcomeData" finished-at="2017-05-13T17:08:27Z">
           <params>
             <param index="0">
               <value>
@@ -344,11 +102,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickStart -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@bb9ab64]" name="tearDown" is-config="true" duration-ms="1377" started-at="2017-05-13T15:23:46Z" finished-at="2017-05-13T15:23:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.xiao.simplebrowsertest.testcases.WelcomeActivityTest@2764c546]" name="tearDown" is-config="true" duration-ms="1330" started-at="2017-05-13T17:08:27Z" finished-at="2017-05-13T17:08:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.xiao.simplebrowsertest.testcases.WelcomeActivityTest -->
-    </test> <!-- SimpleBrowserTest -->
+    </test> <!-- 首页 -->
   </suite> <!-- TestReporter -->
 </testng-results>

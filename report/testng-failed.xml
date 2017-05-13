@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestReporter]">
-  <test name="SimpleBrowserTest">
+  <test name="首页">
     <classes>
       <class name="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest"/>
-      <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest"/>
-      <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest"/>
     </classes>
-  </test> <!-- SimpleBrowserTest -->
-  <test name="SimpleBrowserTest(failed)">
+  </test> <!-- 首页 -->
+  <test name="首页(failed)">
     <classes>
-      <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.xiao.simplebrowsertest.testcases.RegisterActivityTest -->
       <class name="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest">
         <methods>
           <include name="setUp"/>
@@ -23,12 +15,6 @@
           <include name="clickStart" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.xiao.simplebrowsertest.testcases.WelcomeActivityTest -->
-      <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.xiao.simplebrowsertest.testcases.SearchActivityTest -->
     </classes>
-  </test> <!-- SimpleBrowserTest(failed) -->
+  </test> <!-- 首页(failed) -->
 </suite> <!-- Failed suite [TestReporter] -->
