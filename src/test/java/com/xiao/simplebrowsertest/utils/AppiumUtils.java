@@ -87,6 +87,47 @@ public class AppiumUtils {
 	}
 
 	/**
+	 * 清空元素内容
+	 * @param element
+	 */
+	public void clear(AppiumDriver<WebElement> driver,By byElement){
+		WebElement element = findElement(driver,byElement);
+		try {
+			System.out.println("清空"+byElement+"元素内容");
+			element.clear();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 输入内容
+	 * @param driver
+	 * @param byElement
+	 * @param str
+	 */
+	public void typeContent(AppiumDriver<WebElement> driver,By byElement,String str){
+		WebElement element = findElement(driver, byElement);
+		System.out.println("在元素"+byElement+"中输入："+str);
+		element.sendKeys(str);
+	}
+	
+	/**
+	 * 点击操作
+	 * @param driver
+	 * @param byElement
+	 */
+	public void click(AppiumDriver<WebElement> driver,By byElement){
+		WebElement element = findElement(driver, byElement);
+		try {
+			System.out.println("点击元素"+byElement);
+			element.click();
+		} catch (Exception e) {
+			Assert.fail("点击元素"+byElement+"失败", e);
+		}
+	}
+	
+	/**
 	 * 获取文本1
 	 * 
 	 * @param driver
