@@ -2,7 +2,6 @@ package com.xiao.simplebrowsertest.testcases;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -45,7 +44,6 @@ public class WelcomeActivityTest extends BaseCasePrepare {
 		System.out.println("****首页测试开始****");
 		boolean result ;
 		
-		
 		// 检查首页元素
 		appiumUtils.waitForElementToLoad(driver, elementTimeOut, WelcomeActivityElements.startText);
 		result = appiumUtils.isTextCorrect(appiumUtils.getText(driver, WelcomeActivityElements.startText), expected);
@@ -53,8 +51,7 @@ public class WelcomeActivityTest extends BaseCasePrepare {
 		
 		if(result == true){
 			// 点击进入登录页
-			WebElement startText = driver.findElement(WelcomeActivityElements.startText);
-			startText.click();
+			appiumUtils.click(driver, WelcomeActivityElements.startText);
 			Thread.sleep(elementTimeOut);
 			checkAfterClick();
 			((AndroidDriver) driver).pressKeyCode(BACK_CODE);

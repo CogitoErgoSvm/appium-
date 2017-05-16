@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -26,7 +25,6 @@ import jxl.read.biff.BiffException;
  */
 public class SearchActivityTest extends BaseCasePrepare {
 
-
 	/**
 	 * 
 	 * @return
@@ -39,6 +37,11 @@ public class SearchActivityTest extends BaseCasePrepare {
 		return getExcelData.getExcelData();
 	}
 
+	/**
+	 * 
+	 * @param keyWord
+	 * @throws InterruptedException
+	 */
 	@SuppressWarnings("unchecked")
 	@Test(dataProvider = "searchData")
 	public void searchKeyWord(String keyWord) throws InterruptedException {
@@ -48,58 +51,58 @@ public class SearchActivityTest extends BaseCasePrepare {
 		Thread.sleep(2000);
 		checkUiWithSearchPage();
 		Thread.sleep(elementTimeOut);
-		WebElement netAdress = driver.findElement(SearchActivityElements.edit_netAddress);
-		WebElement startSearch = driver.findElement(SearchActivityElements.startSearch);
-		netAdress.clear();
+		//清空
+		appiumUtils.clear(driver, SearchActivityElements.edit_netAddress);
 		Thread.sleep(elementTimeOut);
-		System.out.println("输入检索关键字："+keyWord);
-		netAdress.sendKeys(keyWord);
+		//输入
+		appiumUtils.typeContent(driver, SearchActivityElements.edit_netAddress, keyWord);
 		Thread.sleep(elementTimeOut);
-		startSearch.click();
+		//点击搜索
+		appiumUtils.click(driver, SearchActivityElements.startSearch);
 		Thread.sleep(elementTimeOut);
-		Thread.sleep(elementTimeOut);
-		
+		//断言
 		checkResultFitKeyword(appiumUtils, driver, keyWord, SearchActivityElements.WEBVIEW);
-		Thread.sleep(elementTimeOut);
+		Thread.sleep(2000);
 		cmdCommand.excuteCmd(CLEARDATA);
 		Thread.sleep(2000);
 		cmdCommand.excuteCmd(LAUNCH_APP);
-		
-		
-		//搜索结果断言
-//		System.out.println("断言搜索结果");
-//		appiumUtils.switchWebview(driver, SearchActivityElements.WEBVIEW_NAME);
-//		Thread.sleep(elementTimeOut);
-//		checkResultFitKeyword(appiumUtils, driver, keyWord, SearchActivityElements.webView);
+
+		// 搜索结果断言
+		// System.out.println("断言搜索结果");
+		// appiumUtils.switchWebview(driver,
+		// SearchActivityElements.WEBVIEW_NAME);
+		// Thread.sleep(elementTimeOut);
+		// checkResultFitKeyword(appiumUtils, driver, keyWord,
+		// SearchActivityElements.webView);
 	}
 
 	/**
 	 * 
 	 * @throws InterruptedException
 	 */
-//	@Test
-//	public void searchReturnHome() throws InterruptedException{
-//		beforeSearch();
-//		Thread.sleep(elementTimeOut);
-//		String key = "appium";
-//		WebElement netAdress = driver.findElement(SearchActivityElements.edit_netAddress);
-//		WebElement startSearch = driver.findElement(SearchActivityElements.startSearch);
-//		WebElement home = driver.findElement(SearchActivityElements.Home);
-//		netAdress.clear();
-//		Thread.sleep(elementTimeOut);
-//		System.out.println("输入检索关键字："+key);
-//		netAdress.sendKeys(key);
-//		Thread.sleep(elementTimeOut);
-//		startSearch.click();
-//		Thread.sleep(elementTimeOut);
-//		home.click();
-//		Thread.sleep(elementTimeOut);
-//		String keyStr = netAdress.getText().toString();
-//		Assert.assertEquals("", keyStr, "点击回首页后，输入框清空");
-//	}
-	
-	
-	
+	// @Test
+	// public void searchReturnHome() throws InterruptedException{
+	// beforeSearch();
+	// Thread.sleep(elementTimeOut);
+	// String key = "appium";
+	// WebElement netAdress =
+	// driver.findElement(SearchActivityElements.edit_netAddress);
+	// WebElement startSearch =
+	// driver.findElement(SearchActivityElements.startSearch);
+	// WebElement home = driver.findElement(SearchActivityElements.Home);
+	// netAdress.clear();
+	// Thread.sleep(elementTimeOut);
+	// System.out.println("输入检索关键字："+key);
+	// netAdress.sendKeys(key);
+	// Thread.sleep(elementTimeOut);
+	// startSearch.click();
+	// Thread.sleep(elementTimeOut);
+	// home.click();
+	// Thread.sleep(elementTimeOut);
+	// String keyStr = netAdress.getText().toString();
+	// Assert.assertEquals("", keyStr, "点击回首页后，输入框清空");
+	// }
+
 	/**
 	 * 等待加载搜索页面元素
 	 */
@@ -108,33 +111,29 @@ public class SearchActivityTest extends BaseCasePrepare {
 		appiumUtils.waitForElementToLoad(driver, waitTimeout, SearchActivityElements.Home);
 		appiumUtils.waitForElementToLoad(driver, waitTimeout, SearchActivityElements.edit_netAddress);
 		appiumUtils.waitForElementToLoad(driver, waitTimeout, SearchActivityElements.startSearch);
-	  //appiumUtils.waitForElementToLoad(driver, waitTimeout, SearchActivityElements.progressBar);
 		appiumUtils.waitForElementToLoad(driver, waitTimeout, SearchActivityElements.WEBVIEW);
 	}
 
 	/**
 	 * 搜索页测试准备工作
-	 * @throws InterruptedException 
+	 * 
+	 * @throws InterruptedException
 	 */
+	@SuppressWarnings("unchecked")
 	public void beforeSearch() throws InterruptedException {
-		WebElement startText = driver.findElement(WelcomeActivityElements.startText);
-		startText.click();
+
+		appiumUtils.click(driver, WelcomeActivityElements.startText);
 		Thread.sleep(elementTimeOut);
-		WebElement register_btn = driver.findElement(LoginActivityElements.regist_btn);
-		register_btn.click();
+		//注册
+		appiumUtils.click(driver, LoginActivityElements.regist_btn);
 		Thread.sleep(elementTimeOut);
-		WebElement edit_user = driver.findElement(RegisterActivityElements.edit_username);
-		WebElement edit_pwd = driver.findElement(RegisterActivityElements.edit_password);
-		System.out.println("输入用户名：test");
-		edit_user.sendKeys("test");
-		System.out.println("输入密码：123456");
-		edit_pwd.sendKeys("123456");
+		appiumUtils.typeContent(driver, RegisterActivityElements.edit_username, "test");
+		appiumUtils.typeContent(driver, RegisterActivityElements.edit_password, "123456");
 		Thread.sleep(elementTimeOut);
-		WebElement register = driver.findElement(RegisterActivityElements.register_btn);
-		register.click();
+		appiumUtils.click(driver, RegisterActivityElements.register_btn);
 		Thread.sleep(elementTimeOut);
-		WebElement login_btn = driver.findElement(LoginActivityElements.login_btn);
-		login_btn.click();
+		//登录
+		appiumUtils.click(driver, LoginActivityElements.login_btn);
 		System.out.println("登录app成功");
 	}
 

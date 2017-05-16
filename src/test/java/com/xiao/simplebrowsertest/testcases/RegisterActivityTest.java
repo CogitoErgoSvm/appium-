@@ -2,7 +2,6 @@ package com.xiao.simplebrowsertest.testcases;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -24,20 +23,15 @@ import jxl.read.biff.BiffException;
 
 public class RegisterActivityTest extends BaseCasePrepare {
 
-
-	
 	// switch 判断条件
 	private static final String expectedRegiterFailed = ".activity.RegisterActivity";
 	private static final String expectedRegiterSuccessed = ".activity.LoginActivity";
-	
 
 	@DataProvider(name = "registData")
 	public Object[][] registData() throws BiffException, IOException {
 		GetExcelData getExcelData = new GetExcelData(path, "register");
 		return getExcelData.getExcelData();
 	}
-
-
 
 	/**
 	 * 注册测试
@@ -46,28 +40,22 @@ public class RegisterActivityTest extends BaseCasePrepare {
 	 * @param password
 	 * @throws InterruptedException
 	 */
-	@SuppressWarnings({ "rawtypes" })
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Test(dataProvider = "registData")
 	public void registerWithData(String username, String password, String expected) throws InterruptedException {
 		System.out.println("****Start  testWithRegister****");
 		beforeRegister();
 		checkUiWithRegisterPage();
-		WebElement edit_user = driver.findElement(RegisterActivityElements.edit_username);
-		WebElement edit_pwd = driver.findElement(RegisterActivityElements.edit_password);
-		WebElement register_btn = driver.findElement(RegisterActivityElements.register_btn);
-		System.out.println("clear操作");
-		edit_user.clear();
-		edit_pwd.clear();
-
-		System.out.println("输入用户名:" + username);
-		edit_user.sendKeys(username);
+		//清空
+		appiumUtils.clear(driver, RegisterActivityElements.edit_username);
+		appiumUtils.clear(driver, RegisterActivityElements.edit_password);
+		//输入
+		appiumUtils.typeContent(driver, RegisterActivityElements.edit_username, username);
 		Thread.sleep(elementTimeOut);
-
-		System.out.println("输入密    码:" + password);
-		edit_pwd.sendKeys(password);
+		appiumUtils.typeContent(driver, RegisterActivityElements.edit_password, password);
 		Thread.sleep(elementTimeOut);
-		register_btn.click();
-
+		//点击注册
+		appiumUtils.click(driver, RegisterActivityElements.register_btn);
 		Thread.sleep(elementTimeOut);
 
 		String actualActivity = ((AndroidDriver) driver).currentActivity();
@@ -96,19 +84,19 @@ public class RegisterActivityTest extends BaseCasePrepare {
 	/**
 	 * 点击注册进入注册页面
 	 * 
+	 * @throws InterruptedException
+	 * 
 	 * @description 注册准备工作
 	 */
-	public void beforeRegister() {
-		WebElement startText = driver.findElement(WelcomeActivityElements.startText);
-		startText.click();
+	@SuppressWarnings("unchecked")
+	public void beforeRegister() throws InterruptedException {
+
+		appiumUtils.click(driver, WelcomeActivityElements.startText);
 		System.out.println("点击注册按钮跳转到注册页面");
-		WebElement regist_btn = driver.findElement(LoginActivityElements.regist_btn);
-		regist_btn.click();
-		try {
-			Thread.sleep(elementTimeOut);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		Thread.sleep(elementTimeOut);
+		appiumUtils.click(driver, LoginActivityElements.regist_btn);
+		Thread.sleep(elementTimeOut);
+
 	}
 
 	/**
