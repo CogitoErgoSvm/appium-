@@ -20,6 +20,12 @@ public class GetExcelData {
 		this.sheetName = sheetName;
 	}
 
+	/**
+	 * Excel数据读取
+	 * @return
+	 * @throws BiffException
+	 * @throws IOException
+	 */
 	public Object[][] getExcelData() throws BiffException, IOException {
 		// 获取文件流
 		InputStream iStream = new FileInputStream(path);
