@@ -90,7 +90,6 @@ public class BaseCasePrepare {
 		capabilities.setCapability("appPackage", "com.xiao.simplebrowser");
 		capabilities.setCapability("appActivity", "com.xiao.simplebrowser.activity.WelcomeFlashActivity");
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.APPIUM);
-
 		// 初始化driver，同Selenium初始化类似
 		try {
 			// driver = new AndroidDriver<WebElement>(new
