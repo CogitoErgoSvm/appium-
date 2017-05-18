@@ -45,7 +45,7 @@ public class WelcomeActivityTest extends BaseCasePrepare {
 		boolean result ;
 		
 		// 检查首页元素
-		appiumUtils.waitForElementToLoad(driver, elementTimeOut, WelcomeActivityElements.startText);
+		appiumUtils.waitForElementToLoad(driver, waitTimeout, WelcomeActivityElements.startText);
 		result = appiumUtils.isTextCorrect(appiumUtils.getText(driver, WelcomeActivityElements.startText), expected);
 		
 		
