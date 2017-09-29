@@ -80,8 +80,8 @@ public class BaseCasePrepare {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("automationName", "Appium");
 		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("deviceName", "4520ce51");
-		capabilities.setCapability("platformVersion", "4.4.4");
+		capabilities.setCapability("deviceName", "63a7b810");
+		capabilities.setCapability("platformVersion", "6.0");
 		capabilities.setCapability("app", app.getAbsolutePath());
 
 		capabilities.setCapability("unicodeKeyboard", "True");

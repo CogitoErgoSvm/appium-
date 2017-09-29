@@ -13,6 +13,7 @@
       <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest">
         <methods>
           <include name="setUp"/>
+          <include name="registerWithData" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.xiao.simplebrowsertest.testcases.RegisterActivityTest -->
@@ -20,13 +21,14 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="clickStart" invocation-numbers="0"/>
+          <include name="clickStart" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.xiao.simplebrowsertest.testcases.WelcomeActivityTest -->
       <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="searchKeyWord" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.xiao.simplebrowsertest.testcases.SearchActivityTest -->
     </classes>

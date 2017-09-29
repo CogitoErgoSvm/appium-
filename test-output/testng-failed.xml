@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestReporter]">
+  <test name="SimpleBrowserTest">
     <classes>
       <class name="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest"/>
+      <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest"/>
+      <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest"/>
     </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  </test> <!-- SimpleBrowserTest -->
+  <test name="SimpleBrowserTest(failed)">
     <classes>
+      <class name="com.xiao.simplebrowsertest.testcases.RegisterActivityTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registerWithData" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.xiao.simplebrowsertest.testcases.RegisterActivityTest -->
       <class name="com.xiao.simplebrowsertest.testcases.WelcomeActivityTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="clickStart" invocation-numbers="0"/>
+          <include name="clickStart" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.xiao.simplebrowsertest.testcases.WelcomeActivityTest -->
+      <class name="com.xiao.simplebrowsertest.testcases.SearchActivityTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchKeyWord" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.xiao.simplebrowsertest.testcases.SearchActivityTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SimpleBrowserTest(failed) -->
+</suite> <!-- Failed suite [TestReporter] -->
